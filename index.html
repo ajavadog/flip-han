@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
   <section class="memory-game">
     <div class="memory-card" data-framework="aurelia">
       <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
@@ -65,5 +66,16 @@
   </section>
 
   <script src="scripts.js"></script>
+
+  <audio id="match-sound">
+    <source src="audio/mpeg.mp3" type="audio/mpeg">
+    <source src="audio/ogg.ogg" type="audio/ogg">
+  </audio>
+  <audio id="fail-sound">
+    <source src="audio/fail.mp3" type="audio/mpeg">
+    <source src="audio/fail.ogg" type="audio/ogg">
+  </audio>
+ 
+ 
 </body>
 </html>
