@@ -30,13 +30,19 @@ function checkForMatch() {
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
-
+  // 播放音效
+  const matchSound = document.getElementById('match-sound');
+  matchSound.play();
   resetBoard();
 }
 
 function unflipCards() {
   lockBoard = true;
 
+    // 播放音效
+    const failSound = document.getElementById('fail-sound');
+    failSound.play();
+    
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
